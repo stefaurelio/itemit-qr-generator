@@ -4,7 +4,7 @@ import { QRCode } from 'react-qrcode-logo'
 
 export default function Home(): JSX.Element {
   const [qrValue, setQrValue] = useState('https://itemit.com')
-  const handleGenerate = (event: any) => {
+  const handleQRGenerate = (event: any) => {
     const { value } = event.target
     setQrValue(value)
   }
@@ -48,13 +48,8 @@ export default function Home(): JSX.Element {
             <input
               className="w-full rounded-lg border border-gray-400 px-3 py-2 text-gray-700  placeholder-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-100"
               placeholder="e.g. https://itemit.com"
+              onChange={handleQRGenerate}
             />
-            <button
-              className="rounded-lg border border-primary-500 bg-primary-500 px-3 py-1.5 text-sm font-semibold text-white hover:bg-primary-700"
-              onClick={handleGenerate}
-            >
-              Generate
-            </button>
           </div>
         </label>
       </section>
