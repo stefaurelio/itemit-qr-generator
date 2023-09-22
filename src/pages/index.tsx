@@ -70,8 +70,8 @@ export default function Home(): JSX.Element {
             }}
             eyeRadius={2}
           />
-          <div className="mt-8 text-center">
-            <h1 className="text-display-md font-medium tracking-widest text-gray-700">
+          <div className="mt-6 text-center">
+            <h1 className="text-display-md font-semibold tracking-widest text-gray-700">
               Tracked by itemit
             </h1>
             <p className="mt-2 text-display-sm tracking-wider text-gray-400">itemit.com</p>
