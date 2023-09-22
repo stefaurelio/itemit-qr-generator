@@ -55,12 +55,12 @@ export default function Home(): JSX.Element {
       </section>
       <section>
         <div
-          className="mx-auto h-[620px] w-[620px] rounded-2xl bg-white px-[72px] py-[72px]"
+          className="mx-auto h-[680px] w-[680px] rounded-2xl bg-white px-9 py-10"
           id="qr-generated"
         >
           <QRCode
             value={qrValue}
-            size={360}
+            size={480}
             quietZone={0}
             ecLevel={'H'}
             fgColor={'#5BBFBE'}
@@ -74,7 +74,7 @@ export default function Home(): JSX.Element {
             <h1 className="text-display-md font-medium tracking-widest text-gray-700">
               Tracked by itemit
             </h1>
-            <p className="text-display-sm tracking-wider text-gray-400">itemit.com</p>
+            <p className="mt-2 text-display-sm tracking-wider text-gray-400">itemit.com</p>
           </div>
         </div>
 
