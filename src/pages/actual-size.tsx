@@ -60,26 +60,26 @@ export default function Home(): JSX.Element {
       </section>
       <section>
         <div
-          className="mx-auto h-[620px] w-[620px] rounded-2xl bg-white px-[72px] py-[72px]"
+          className="mx-auto h-[310px] w-[310px] rounded-2xl bg-white px-9 py-9"
           id="qr-generated"
         >
-          <QRCode
-            value={qrValue}
-            size={360}
-            quietZone={0}
-            ecLevel={'H'}
-            fgColor={'#5BBFBE'}
-            eyeColor={{
-              outer: '#4B9C9C',
-              inner: '#5BBFBE',
-            }}
-            eyeRadius={2}
-          />
-          <div className="mt-8 text-center">
-            <h1 className="text-display-md font-medium tracking-widest text-gray-700">
-              Tracked by itemit
-            </h1>
-            <p className="text-display-sm tracking-wider text-gray-400">itemit.com</p>
+          <div className="mx-auto">
+            <QRCode
+              value={qrValue}
+              size={180}
+              quietZone={0}
+              ecLevel={'H'}
+              fgColor={'#5BBFBE'}
+              eyeColor={{
+                outer: '#4B9C9C',
+                inner: '#5BBFBE',
+              }}
+              eyeRadius={2}
+            />
+          </div>
+          <div className="mt-2 text-center">
+            <h1 className="text-lg font-medium tracking-widest text-gray-700">Tracked by itemit</h1>
+            <p className="text-sm tracking-wider text-gray-400">itemit.com</p>
           </div>
         </div>
 
