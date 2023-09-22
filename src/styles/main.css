@@ -4,3 +4,40 @@
 
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@font-face {
+  font-weight: 100 900;
+  font-family: 'Inter';
+  font-style: normal;
+  src: url('/fonts/Inter-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 100 900;
+  font-family: 'Inter';
+  font-style: normal;
+  src: url('/fonts/Inter-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 100 900;
+  font-family: 'Inter';
+  font-style: normal;
+  src: url('/fonts/Inter-Semibold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 100 900;
+  font-family: 'Inter';
+  font-style: normal;
+  src: url('/fonts/Inter-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+#react-qrcode-logo {
+  margin-left: auto;
+  margin-right: auto;
+}
