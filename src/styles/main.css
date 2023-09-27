@@ -5,6 +5,23 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+input[type='file']::-webkit-file-upload-button,
+input[type='file']::file-selector-button {
+  color: white;
+  background-color: theme('colors.gray.700');
+  font-weight: 500;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+  border-width: 0px;
+  cursor: pointer;
+  padding-top: 0.625rem /* 10px */;
+  padding-bottom: 0.625rem /* 10px */;
+  padding-left: 2rem /* 32px */;
+  padding-right: 1rem /* 16px */;
+  margin-inline-start: -1rem;
+  margin-inline-end: 1rem;
+}
+
 @font-face {
   font-weight: 200;
   font-family: 'Inter';
