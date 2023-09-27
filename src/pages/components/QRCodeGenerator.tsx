@@ -9,6 +9,14 @@ interface QRGeneratorProps {
 }
 
 const QRGenerator: React.FC<QRGeneratorProps> = ({ value, documentId, QRsize, isBulk }) => {
+  const commonHeadingClass = isBulk
+    ? 'text-md font-semibold tracking-widest'
+    : 'text-display-md font-semibold tracking-widest'
+
+  const commonTextClass = isBulk
+    ? 'mt-2 text-sm tracking-wider'
+    : 'mt-2 text-display-sm tracking-wider'
+
   return (
     <div className="rounded-2xl bg-white px-4 py-3">
       <QRCode
@@ -25,21 +33,8 @@ const QRGenerator: React.FC<QRGeneratorProps> = ({ value, documentId, QRsize, is
         eyeRadius={2}
       />
       <div className="mt-6 text-center">
-        {isBulk ? (
-          <>
-            <h1 className="text-md font-semibold tracking-widest text-gray-700">
-              Tracked by itemit
-            </h1>
-            <p className="mt-2 text-sm tracking-wider text-gray-400">itemit.com</p>
-          </>
-        ) : (
-          <>
-            <h1 className="text-display-md font-semibold tracking-widest text-gray-700">
-              Tracked by itemit
-            </h1>
-            <p className="mt-2 text-display-sm tracking-wider text-gray-400">itemit.com</p>
-          </>
-        )}
+        <h1 className={`text-gray-700 ${commonHeadingClass}`}>Tracked by itemit</h1>
+        <p className={`text-gray-400 ${commonTextClass}`}>itemit.com</p>
       </div>
     </div>
   )
