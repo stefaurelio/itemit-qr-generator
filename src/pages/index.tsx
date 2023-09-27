@@ -144,7 +144,7 @@ function BulkQRCodeGenerator(): JSX.Element {
             </PDFDownloadLink>
           )}
         </div>
-        <div className="hidden">
+        <div className="mt-8 grid grid-cols-4 gap-6">
           {csvData.map((row, index) => (
             <Suspense
               fallback={<LoadingSpinner message="Loading QR Code Generator..." />}
